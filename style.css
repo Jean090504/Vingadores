@@ -37,10 +37,10 @@ header{
 main{
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end; 
     padding: 12px 48px;
     color: white;
-    gap: 12px;
+    gap: 48px; 
     height: 80%;
 }
 
@@ -80,20 +80,23 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center; 
-    gap: 12px;
+    gap: 24px; 
 }
 
 p{
-    width: 800px;
+    max-width: 850px;
+    width: 100%;
+    align-items: flex-end;
     text-align: end;
     color: white;
     font-size: 28px;
     line-height: 1.5;
-    margin-top: 70px;
+    padding-top: 70px; 
 }
 
 .assistir{
     display: flex;
+    align-items: center;
     background: none;
     border: none;
     cursor: pointer;
@@ -101,31 +104,35 @@ p{
 
 .ingresso{
     display: flex;
+    align-items: center;
     background: none;
     border: none;
     cursor: pointer;
-
 }
 
 .botao{
     display: flex;
-    justify-content: space-between;
-    align-items: end;
-    gap: 12px;
-    margin-left: 240px;
-    margin-top: 80px;
+    justify-content: flex-end; 
+    align-items: center;
+    width: 100%; 
+    padding-top: 48px;
+    gap: 12px; 
+    box-sizing: border-box;
+    background-color: transparent;
 }
 
 .amei{
-    width: 32px;
-    height: 32px;
     cursor: pointer;
     display: flex;
     align-items: center;
-    margin-top: 100px;
-    margin-left: 340px;
-    position: relative;
+    align-self: flex-end;
+    padding-top: 0;
     
+}
+.coracao{
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
 }
 
 .nove{
@@ -134,9 +141,7 @@ p{
 
 .ver{  
     font-size: 20px;
-    margin-left: 660px;
-    padding-top: 10px;
-
+    align-self: flex-end; 
 }
 
 footer{
@@ -183,10 +188,10 @@ footer{
     main{
         display: flex;
         flex-direction: column;
-        align-items: end;
-        padding: 12px 48px;
+        align-items: flex-end;
+        padding: 12px 24px;
         color: white;
-        gap: 12px;
+        gap: 24px; 
         height: 80%;
     }
 
@@ -209,15 +214,15 @@ footer{
     }
 
     p{
-        width: 100%;
+        max-width: 100%;
         font-size: 18px;
-        margin-top: 40px;
+        padding-top: 40px; 
     }
 
     .person{
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
     }
 
     .lupa{
@@ -235,17 +240,26 @@ footer{
 
     .botao{
         flex-direction: column;
-        margin-left: 0;
-        margin-top: 40px;
+        justify-content: flex-start;
+        width: 100%;
+        padding-top: 40px;
+        gap: 12px;
+        background-color: transparent; 
     }
 
     .amei{
-        margin-left: 0;
-        margin-top: 40px;
+        align-self: flex-end;
+        padding-top: 0;
     }
 
     .ver{
-        margin-left: 0;
-        padding-top: 0;
+        align-self: flex-end;
+        padding-top: 10px;
+    }
+
+    .fundo{
+        filter: brightness(0.8) blur(9px);
+        -webkit-filter: brightness(0.8) blur(2px);
+        transition: filter 0.25s ease;
     }
 }
