@@ -111,14 +111,16 @@ p{
 }
 
 .botao{
-    display: flex;
+    display: inline-flex;
     justify-content: flex-end; 
     align-items: center;
     width: 100%; 
+    height: px;
     padding-top: 48px;
-    gap: 12px; 
+    gap: 6px; 
     box-sizing: border-box;
     background-color: transparent;
+    margin-top: 24px;
 }
 
 .amei{
@@ -141,7 +143,11 @@ p{
 
 .ver{  
     font-size: 20px;
+    display: inline-flex;
+    align-items: flex-end;
     align-self: flex-end; 
+    margin-left: 8px;
+    margin-top: calc(-1 * 24px);
 }
 
 footer{
@@ -238,28 +244,69 @@ footer{
         cursor: pointer;
     }
 
-    .botao{
+.botao{
         flex-direction: column;
         justify-content: flex-start;
+        align-self: flex-start;   
+        align-items: flex-start; 
         width: 100%;
         padding-top: 40px;
-        gap: 12px;
+        gap: 6px;
         background-color: transparent; 
     }
 
     .amei{
-        align-self: flex-end;
+        align-self: flex-end;   
         padding-top: 0;
     }
 
     .ver{
-        align-self: flex-end;
-        padding-top: 10px;
+        align-self: flex-end;  
+        margin-top: calc(-1 * 24px);
     }
 
     .fundo{
         filter: brightness(0.8) blur(9px);
         -webkit-filter: brightness(0.8) blur(2px);
+        transition: filter 0.25s ease;
+    }
+}
+
+/* Estilos para Mobile */
+@media screen and (max-width: 375px) {
+    header{
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .spans{
+        gap : 16px;
+        font-size: 20px;
+    }
+    main{
+        padding: 12px 12px;
+        gap: 16px; 
+    }
+    h1{
+        font-size: 28px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 14px;
+        gap: 12px;
+    }
+    p{
+        font-size: 16px;
+        padding-top: 20px; 
+    }
+    .botao{
+        padding-top: 32px;
+    }
+    .fundo{
+        filter: brightness(0.7) blur(6px);
+        -webkit-filter: brightness(0.7) blur(6px);
         transition: filter 0.25s ease;
     }
 }
