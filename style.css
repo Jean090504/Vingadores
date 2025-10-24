@@ -111,13 +111,14 @@ p{
 }
 
 .botao{
+    display: flex;
     display: inline-flex;
     justify-content: flex-end; 
     align-items: center;
-    width: auto;             /* permitir reduzir em telas pequenas */
-    max-width: 480px;        /* opcional: limitar largura em telas grandes */
-    height: auto;            /* remover valor inválido */
-    padding: 12px 16px;      /* menor padding que controla a altura do botão */
+    width: 100%; 
+    height: px;
+    padding-top: 48px;
+    gap: 12px; 
     gap: 6px; 
     box-sizing: border-box;
     background-color: transparent;
@@ -254,9 +255,9 @@ footer{
         justify-content: flex-start;
         align-self: flex-start;   
         align-items: flex-start; 
-        width: auto;            /* permitir encolher no tablet */
-        max-width: 100%;
-        padding: 8px 0 0 0;     /* reduzir padding superior */
+        width: 100%;
+        padding-top: 40px;
+        gap: 12px;
         gap: 6px;
         background-color: transparent; 
     }
@@ -357,9 +358,6 @@ footer{
         justify-content: flex-start;
         align-self: stretch;   
         align-items: flex-start; 
-        width: auto;            /* deixa o botão encolher conforme o conteúdo */
-        max-width: 100%;
-        padding: 6px 8px;       /* padding menor para reduzir a altura no mobile */
         gap: 6px;
         background-color: transparent; 
     }
